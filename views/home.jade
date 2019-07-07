@@ -1,0 +1,59 @@
+extends layout
+block content
+  link(rel='stylesheet', href='/stylesheets/pure-min.css')
+
+  title= title
+  .container
+    h3(style='margin-left: 5px') Hosgeldiniz
+    h4(style='margin-left: 5px') Kaydedilen son 5 veri
+    table.pure-table(style='margin-left: 5px')
+      thead
+        tr
+          th #
+          th X
+          th Y
+          th Z
+          th Sıcaklık (C°)
+          th Batarya (%)
+          th Batarya (V)
+      tbody
+        tr.pure-table-odd
+          td 1
+          td !{ datas[1].x }
+          td !{ datas[1].y }
+          td !{ datas[1].z }
+          td !{ datas[1].temp }
+          td !{ datas[1].batteryLevel }
+          td !{ datas[1].batteryVolt }
+        tr
+          td 2
+          td !{ datas[2].x }
+          td !{ datas[2].y }
+          td !{ datas[2].z }
+          td !{ datas[2].temp }
+          td !{ datas[2].batteryLevel }
+          td !{ datas[2].batteryVolt }
+        tr.pure-table-odd
+          td 3
+          td !{ datas[3].x }
+          td !{ datas[3].y }
+          td !{ datas[3].z }
+          td !{ datas[3].temp }
+          td !{ datas[3].batteryLevel }
+          td !{ datas[3].batteryVolt }
+        tr
+          td 4
+          td !{ datas[4].x }
+          td !{ datas[4].y }
+          td !{ datas[4].z }
+          td !{ datas[4].temp }
+          td !{ datas[4].batteryLevel }
+          td !{ datas[4].batteryVolt }
+        tr.pure-table-odd
+          td 5
+          td !{ datas[5].x }
+          td !{ datas[5].y }
+          td !{ datas[5].z }
+          td !{ datas[5].temp }
+          td !{ datas[5].batteryLevel }
+          td !{ datas[5].batteryVolt }

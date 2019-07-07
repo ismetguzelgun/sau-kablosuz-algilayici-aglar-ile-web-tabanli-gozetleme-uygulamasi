@@ -1,0 +1,6 @@
+1-	node.js kurulumu gerçekleþtirilir.(v5.3.0)
+2-	mongoDB kurulumu gerçekleþtirilir.
+3-	komut satýrý açýlýp npm install yazýlýr
+4-	mongoDB kurulu olan klasörün içine gidilip bin dosyasýna girilip
+	mongod --dbpath \\bitirme dosyasýnýn açýldýðý dizin\data verilir.
+5-	npm start ile proje açýlýr.

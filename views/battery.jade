@@ -1,0 +1,12 @@
+extends layout
+block content
+    style.
+       body { font: 16px arial; }
+
+    p(style='padding-left: 320px') Batarya Bilgisi
+    br
+    svg#fillgauge2(width='90%', height='150')
+    p#volt(style='padding-left: 335px')
+
+    script(src='javascripts/batteryLevel.js', type='text/javascript')
+    script(src='javascripts/battery.js', type='text/javascript')

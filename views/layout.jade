@@ -1,0 +1,66 @@
+doctype strict
+html(xmlns='http://www.w3.org/1999/xhtml', xml:lang='en', lang='en')
+  head
+    title= title
+    script(src='javascripts/socket.io.js')
+    script(src='javascripts/jquery.min.js')
+    meta(http-equiv='Content-Type', content='text/html; charset=utf-8')
+    link(rel='stylesheet' href='/stylesheets/style.css')
+    script(src='javascripts/cufon-yui.js', type='text/javascript')
+    script(src='javascripts/cufon-replace.js', type='text/javascript')
+    script(src='javascripts/Myriad_Pro_300.font.js', type='text/javascript')
+    script(src='javascripts/d3.v3.min.js', type='text/javascript')
+    script(src='javascripts/pointerevents.js', type='text/javascript')
+    script(src='javascripts/pointergestures.js', type='text/javascript')
+    script(src='javascripts/iopctrl.js', type='text/javascript')
+    link(rel='stylesheet' href='stylesheets/jquery-ui.css')
+    script(src='javascripts/gauge.js', type='text/javascript')
+
+  body#page1
+    .tail-top
+      .tail-bottom
+        .body-bg
+          // HEADER
+          #header
+            .extra
+              img(src='images/header-img.jpg', alt='')
+            .row-1
+              .fleft
+                a(href='http://www.cs.sakarya.edu.tr')
+                  img(src='images/logo.gif', alt='')
+              .fright
+                  img(src='images/name.png', alt='')
+            .row-2
+              ul
+                li.m1
+                  a#a1(href='home' onclick='como("#a1");') Anasayfa
+                li.m2
+                  a#a2(href='acc' onclick='como("#a2");') ACC
+                li.m3
+                  a#a3(href='temp' onclick='como("#a3");') Sıcaklık
+                li.m4
+                  a#a4(href='battery' onclick='como("#a4");') Batarya
+                li.m5
+                  a(href='signout') Çıkış Yap
+             //   li.m5
+             //     a(href='contacts') contacts
+             //   li.m6
+             //     a(href='sitemap') Sitemap
+            .row-3
+              block content
+          // CONTENT
+          #content
+            .tail-right
+              .wrapper
+                .col-1
+                  .indent
+          // FOOTER
+          #footer
+            .indent
+              .fleft
+              .fright Haklar - SAU
+    script(type='text/javascript').
+      Cufon.now();
+    div(align='center')
+      | Sakarya Üniversitesi Bilgisayar Mühendisliği Bölümü
+      a(href='http://www.cs.sakarya.edu.tr')

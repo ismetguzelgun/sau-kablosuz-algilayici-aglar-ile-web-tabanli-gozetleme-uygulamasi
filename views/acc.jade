@@ -1,0 +1,24 @@
+extends layout
+
+block content
+  link(rel='stylesheet' href='/stylesheets/gauge.css')
+  script(src='javascripts/indexSocket.js', type='text/javascript')
+  style.
+    td.xyz { padding-left: 120px; }  
+    body { font: 16px arial; }
+
+  table
+      tr
+        td(colspan='3', style='padding-left: 230px')
+          p Akselerometre:
+      tr
+        td#X
+        td#Y
+        td#Z
+      tr
+        td.xyz
+          h2 X
+        td.xyz
+          h2 Y
+        td.xyz
+          h2 Z
