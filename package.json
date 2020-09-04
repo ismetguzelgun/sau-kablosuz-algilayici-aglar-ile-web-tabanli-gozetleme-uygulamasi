@@ -15,7 +15,7 @@
     "express": "^4.13.4",
     "express-session": "~1.0.4",
     "jade": "~1.11.0",
-    "mongodb": "^1.4.4",
+    "mongodb": "^3.6.1",
     "mongoose": "~3.8.12",
     "monk": "latest",
     "morgan": "~1.6.1",
